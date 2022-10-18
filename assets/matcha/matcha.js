@@ -244,17 +244,18 @@ if(typeof(allowDarkMode)!=undefined){
         var matchaDark = localStorage.getItem('matchaDark');
         var time = new Date();
         var hour = time.getHours();
-        if(matchaDark=='yes' && !$('body').hasClass('matcha-dark')){
-            //根据用户设置，在前端自动关灯
-            lightswitch('off');
-            toast('已为您自动关灯');
-        }
-        else if(window.matchMedia('(prefers-color-scheme:dark)').matches){
-            //跟随系统深色模式
-            lightswitch('off');
-            toast('已为您自动关灯');
-        }
-        else if((hour>18 || hour<7) && $('body').hasClass('matcha-dark')){
+        // if(matchaDark=='yes' && !$('body').hasClass('matcha-dark')){
+        //     //根据用户设置，在前端自动关灯
+        //     lightswitch('off');
+        //     toast('已为您自动关灯');
+        // }
+        // else if(window.matchMedia('(prefers-color-scheme:dark)').matches){
+        //     //跟随系统深色模式
+        //     lightswitch('off');
+        //     toast('已为您自动关灯');
+        // }
+        // else
+        if((hour>18 || hour<7) && $('body').hasClass('matcha-dark')){
             //后端根据时间关灯后，前端给出提示
             $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
             $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
@@ -270,15 +271,15 @@ $('#nav-drop').click(function(){ $('.navbar-dropdown').fadeIn().addClass('down')
 $('#nav-rise').click(function(){ $('.navbar-dropdown').fadeOut().removeClass('down') });
 $('.navbar-dropdown a').click(function(){ $('.navbar-dropdown').fadeOut().removeClass('down') });
 //页面不在顶部时收起导航栏
-$(window).scroll(function(event){
-    if($(window).scrollTop()!=0){
-        $('#small-header').addClass('shrink');
-        $('.container').addClass('with-shrunk-nav');
-    }else{
-        $('#small-header').removeClass('shrink')
-        $('.container').removeClass('with-shrunk-nav');
-    }
-});
+// $(window).scroll(function(event){
+//     if($(window).scrollTop()!=0){
+//      $('#small-header').addClass('shrink');
+//      $('.container').addClass('with-shrunk-nav');
+//     }else{
+//         $('#small-header').removeClass('shrink')
+//         $('.container').removeClass('with-shrunk-nav');
+//     }
+// });
 
 //Comment Closed Feedback
 var CommentClosedBtn = function(){

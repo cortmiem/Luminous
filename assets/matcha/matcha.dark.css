@@ -14,13 +14,17 @@ body.matcha-dark {
     --light-gray-bg: rgba(255,255,255,.02);
     --overlay-bg: rgba(0,0,0,.95);
     --white-or-black: #000;
-
-    background: #181818;
-    color: #ddd
+    background-color: #181818;
+    background-image: url(/usr/themes/Luminous/assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ddd;
 }
 
 body.matcha-dark .container {
-    background: #232323
+    background-color: rgba(35,35,35,.65);
 }
 
 /* 深色背景 */
@@ -35,7 +39,7 @@ body.extrasimple.matcha-dark {
 }
 
 body.matcha-dark .small-header.shrink {
-	background: rgba(10,10,10,.7);
+	background: rgba(10,10,10,.65);
 }
 
 /* 去除背景 */

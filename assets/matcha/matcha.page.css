@@ -67,7 +67,7 @@
 }
 
 .small-header {
-	padding: 1em .5em;
+	padding: .5em;
 	border-bottom: 2px solid var(--theme-color);
 }
 .header:not(.ins-search *) {
@@ -81,7 +81,7 @@
 
 .header a,
 .small-header a {
-	font-family: 'ZCOOL XiaoWei', serif!important;
+	font-family: 'Hina Mincho', serif!important;
 }
 
 .widget {
@@ -152,8 +152,6 @@
 	right: 0;
 }
 .error-page .error-img {
-	width: 15em;
-	height: 15em;
 	margin-right: 1em;
 	opacity: .75
 }
@@ -203,7 +201,8 @@
 }
 .header .site-description,
 .small-header .site-description {
-	color: #666;
+	color: #BDC0BA;
+	font-family: 'Hina Mincho', 'Noto Serif SC', serif;
 	font-style: normal;
 	font-size: 14px;
 	line-height: 20px;
@@ -310,16 +309,18 @@
 }
 
 .small-header.shrink {
+	height: 33px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 998;
-	background: rgba(253,253,253,.7);
-	backdrop-filter: blur(1em);
-	-webkit-backdrop-filter: blur(1em)
+	background: rgba(253,253,253,.7); 
+	backdrop-filter: blur(1em); 
+	-webkit-backdrop-filter: blur(1em) 
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
+
 	.container.with-shrunk-nav {
 		padding-top: 7em
 	}
@@ -330,6 +331,9 @@
 }
 .small-header.shrink .site-name {
 	margin: 0;
+}
+.small-header.shrink #logo {
+	font-size: 1.5em;
 }
 .small-header.shrink .site-name .site-title {
 	font-size: 1rem;

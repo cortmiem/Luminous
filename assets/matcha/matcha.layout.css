@@ -57,20 +57,25 @@
 /* helpbar button */
 #back2top,
 #focus-mode-close {
-	color: #fff;
-	background: var(--theme-color);
-	border: none;
 	border-radius: 100%;
-	padding: .7em .9em;
-	font-size: 1.1em;
-	font-weight: bold;
-	box-shadow: 0 0 .2em var(--light-bg);
-	cursor: pointer;
+    color: var(--text-gray);
+    background: var(--white-or-black);
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+    text-overflow: clip;
+    overflow: hidden;
+    margin-bottom: 0.25em;
+    box-shadow: 0 0 0.15em var(--gray-bg);
+    border: 1px solid var(--light-gray-bg);
+    transition: all 0.4s ease !important;
+
 	position: fixed;
-	bottom: 1.5em;
+	bottom: 30px;
 	right: 1em;
-	transition: .4s;
-	z-index: 60
+    z-index: 99;
+    outline: 0;
+    transform: scale(0);
 }
 
 #helpbar {

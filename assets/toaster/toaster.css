@@ -12,7 +12,7 @@
     transition-property: top, bottom, left, right, transform;
     transition: .3s;
     font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-family: 'Noto Serif SC',-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     line-height: 1.5;
     word-break: break-all;
     overflow: hidden;

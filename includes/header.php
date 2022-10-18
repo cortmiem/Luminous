@@ -4,7 +4,7 @@ $this->need("includes/head.php"); ?>
 <?php $this->need('includes/sidebar.php'); ?>
 <div id="body">
     <!-- 移动端导航 -->
-    <div class="small-header" id="small-header">
+    <div class="small-header shrink" id="small-header">
         <div class="navbar">
             <div class="navbar-action">
                 <div class="navbar-action-left">

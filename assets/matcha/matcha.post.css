@@ -221,7 +221,7 @@
 .comment-content pre,
 .comment-content code {
 	background: var(--light-bg);
-	font-family: /*Menlo,*/Monaco,Consolas,"Lucida Console","Courier New",monospace;
+	font-family: 'Noto Serif SC', Monaco,Consolas,"Lucida Console","Courier New",monospace;
 	font-size: 100%;
 }
 .post-content code,
@@ -414,7 +414,7 @@
 #comment-form .submit,
 #comment-form .textarea,
 #comment-form input:not(.submit-extra input) {
-	font-family: /*Menlo,*/Monaco,Consolas,"Lucida Console","Courier New",monospace;
+	font-family: 'Noto Serif SC', Monaco,Consolas,"Lucida Console","Courier New",monospace;
 	border-radius: 2px;
 	font-size: 1em;
 	transition: 0.3s;

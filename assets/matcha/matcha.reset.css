@@ -28,7 +28,8 @@ body {
 
 body,
 html {
-	scroll-behavior:smooth
+	scroll-behavior:smooth;
+	overflow: overlay;
 }
 
 a {
