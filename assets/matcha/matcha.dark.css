@@ -15,7 +15,7 @@ body.matcha-dark {
     --overlay-bg: rgba(0,0,0,.95);
     --white-or-black: #000;
     background-color: #181818;
-    background-image: url(/usr/themes/Luminous/assets/bg.jpg);
+    background-image: url(/usr/themes/luminous/assets/bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
