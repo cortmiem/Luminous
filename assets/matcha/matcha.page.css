@@ -408,15 +408,7 @@
 .sidebar-foot {
 	color: #888;
 	font-size: 80%;
-	font-family: "Droid Serif",
-		Georgia,
-		"Times New Roman",
-		"PingFang SC",
-		"Hiragino Sans GB",
-		"Source Han Sans CN",
-		"WenQuanYi Micro Hei",
-		"Microsoft Yahei",
-		serif;
+	font-family: Merriweather, 'Hina Mincho', 'Noto Serif SC', serif;
 	margin-right: 20px
 }
 

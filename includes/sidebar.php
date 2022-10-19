@@ -9,7 +9,7 @@
 	<section class="widget sidebar-foot">
     <ul class="widget-list">
       <li><a rel="nofollow" target="_blank" href="https://github.com/cortmiem/Luminous" class="no-linkTarget">Luminous</a> of <a rel="nofollow" target="_blank" href="https://github.com/BigCoke233/matcha" class="no-linkTarget">Matcha</a></li>
-      <li>Powered by <a rel="nofollow" target="_blank" href="http://www.typecho.org" class="no-linkTarget">Typecho</a></li>
+      <li>由 <a rel="nofollow" target="_blank" href="http://www.typecho.org" class="no-linkTarget">Hexo</a> 強力駆動</li>
     </ul>
   </section>
 </aside>

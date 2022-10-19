@@ -2,6 +2,7 @@
 <footer id="footer" role="contentinfo">
 	&copy; <?php Matcha::copyrightYear(); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
 	<?php Matcha::footerInfo(); ?>
+	<p id="hitokoto"><a href="#" id="hitokoto_text">少女祈祷中...</a></p>
 	<!-- 返回顶部按钮 -->
 	<button id="back2top" title="返回顶部"><span class="iconfont">&#xe749;</span></button>
 </footer>
