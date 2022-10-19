@@ -273,8 +273,8 @@ $('.navbar-dropdown a').click(function(){ $('.navbar-dropdown').fadeOut().remove
 //页面不在顶部时收起导航栏
 // $(window).scroll(function(event){
 //     if($(window).scrollTop()!=0){
-//      $('#small-header').addClass('shrink');
-//      $('.container').addClass('with-shrunk-nav');
+     $('#small-header').addClass('shrink');
+     $('.container').addClass('with-shrunk-nav');
 //     }else{
 //         $('#small-header').removeClass('shrink')
 //         $('.container').removeClass('with-shrunk-nav');
