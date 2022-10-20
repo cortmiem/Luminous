@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="<?php $this->options->favicon(); ?>">
     <?php } 
     //输出网站标题、css 引用和其他 head 内容 ?>
-    <title><?php Matcha::title($this); ?></title>
+    <title><?php Matcha::title($this); ?> - 眩しさだけは、忘れなかった。</title>
     <?php Matcha::head(); $this->header(); ?>
 
     <style>
