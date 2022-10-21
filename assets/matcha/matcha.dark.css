@@ -15,8 +15,8 @@ body.matcha-dark {
     --overlay-bg: rgba(0,0,0,.95);
     --white-or-black: #000;
     background-color: #181818;
-    background-image: url(https://asuhara.one/bg.jpg);
-    background-position: center center;
+    background-image: url('/bg.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
