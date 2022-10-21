@@ -15,7 +15,7 @@ body.matcha-dark {
     --overlay-bg: rgba(0,0,0,.95);
     --white-or-black: #000;
     background-color: #181818;
-    background-image: url('/bg.jpg');
+    background-image: url('/bg-dark.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;

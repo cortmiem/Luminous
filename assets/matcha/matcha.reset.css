@@ -17,7 +17,7 @@
 
 body {
 	/* background: #fafafa; */
-	background-image: url('/bg.png');
+	background-image: url('/bg-light.webp');
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
 	background-position: center;
