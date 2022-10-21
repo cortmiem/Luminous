@@ -139,6 +139,7 @@ pre::-webkit-scrollbar-corner {
 
 .focus-mode {
 	background-color: var(--white-or-black);
+	background-image: none!important;
 }
 
 .focus-mode .container {
