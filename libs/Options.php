@@ -49,6 +49,19 @@ function themeConfig($form) {
     );
     $form->addInput($IndexDisplayMode->addRule('required', _t('此处必须设置')));
 
+    //启用 ajax 评论
+    $EnableExtraSimple = new Typecho_Widget_Helper_Form_Element_Radio('EnableExtraSimple', array(
+            'able' => _t('启用'),
+            'disable' => _t('停用'),
+        ),
+        'able',
+        _t('超简洁模式（Beta）'),
+        _t('
+            
+        ')
+    );
+    $form->addInput($EnableExtraSimple->addRule('required', _t('此处必须设置')));
+
     /**
      * 相关信息
      */
@@ -141,6 +154,10 @@ function themeConfig($form) {
     $timeFormat = new Typecho_Widget_Helper_Form_Element_Text('timeFormat', NULL, NULL, _t('<h2>开发者设置</h2> 自定义时间格式'), _t('
         <p class="description">留空则默认采用人性化时间（即“昨天、前天、几天前”），若不想要使用人性化时间则在此填入 PHP 时间格式，例如：<code>Y-m-d G:i:s</code></p>'));
     $form->addInput($timeFormat);
+    //自定义导航栏
+    $customNav = new Typecho_Widget_Helper_Form_Element_Textarea('customNav', NULL, NULL, _t('自定义导航栏'), _t('
+        <p class="description">用 JSON 书写，具体格式参考文档。</p>'));
+    $form->addInput($customNav);
     //自定义 head
     $customHead = new Typecho_Widget_Helper_Form_Element_Textarea('customHead', NULL, NULL, _t('自定义 head 头部信息'), _t('
         <p class="description">将会输出在 head 标签结束之前，通常用于引入 css 文件。</p>'));
