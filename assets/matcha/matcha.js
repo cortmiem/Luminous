@@ -247,23 +247,17 @@ if(typeof(allowDarkMode)!=undefined){
         if(matchaDark=='yes' && !$('body').hasClass('matcha-dark')){
             //根据用户设置，在前端自动关灯
             lightswitch('off');
-            // toast('已为您自动关灯');
+            //toast('已为您自动关灯（前端）');
         }
         else if(window.matchMedia('(prefers-color-scheme:dark)').matches){
             //跟随系统深色模式
             lightswitch('off');
-            // toast('已为您自动关灯');
+            //toast('已为您自动关灯（系统）');
         }
-        else
-        if((hour<18 && hour>7) && $('body').hasClass('matcha-dark')){
+        else if((hour<18 && hour>7) && $('body').hasClass('matcha-dark')){
             //后端根据时间关灯后，前端给出提示
-            $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
-            $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
             lightswitch('on');
-            //toast('天晚了，已为您自动关灯');
-        }else if($('body').hasClass('matcha-dark')){
-            $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
-            $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
+            toast('あさだよ～');
         }
     });
 }
