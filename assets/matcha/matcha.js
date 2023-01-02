@@ -255,11 +255,12 @@ if(typeof(allowDarkMode)!=undefined){
             // toast('已为您自动关灯');
         }
         else
-        if((hour>18 || hour<7) && $('body').hasClass('matcha-dark')){
+        if((hour<18 && hour>7) && $('body').hasClass('matcha-dark')){
             //后端根据时间关灯后，前端给出提示
             $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
             $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
-            toast('天晚了，已为您自动关灯');
+            lightswitch('on');
+            //toast('天晚了，已为您自动关灯');
         }else if($('body').hasClass('matcha-dark')){
             $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
             $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
