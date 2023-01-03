@@ -17,7 +17,7 @@
 
 body {
 	/* background: #fafafa; */
-	background-image: url('/bg-light.webp');
+	background-image: url('https://cdn.jsdelivr.net/gh/cortmiem/luminous@1.0/bg-light.jpg');
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
 	background-position: center;
